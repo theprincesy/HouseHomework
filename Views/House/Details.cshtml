@@ -1,0 +1,100 @@
+@model House
+
+@{
+    ViewData["Title"] = "Details";
+}
+<style>
+    .image-gallery {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        /* Adjust the gap between images as needed */
+    }
+
+    .image-item {
+        width: 150px;
+        /* Adjust the image container width as needed */
+    }
+
+    .house-image {
+        width: 100%;
+        height: auto;
+        border: 1px solid #ccc;
+        max-height: 200px;
+        /* Limit the maximum height of images for consistency */
+    }
+</style>
+
+<h1>Details</h1>
+
+<div>
+    <h4>House</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Address)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Address)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Bedrooms)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Bedrooms)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Bathrooms)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Bathrooms)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Price)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Price)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Area)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Area)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.NumberOfRooms)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.NumberOfRooms)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Floor)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Floor)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.IsSold)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.IsSold)
+        </dd>
+        <div class="image-gallery">
+            @foreach (Image image in Model.Images)
+            {
+                <div class="image-item">
+                    <img src="@image.ImageUrl" alt="House Image" class="house-image">
+                    <h1>New</h1>
+                </div>
+            }
+        </div>
+        @* <div class="image-gallery">
+            <img src="/uploads/1b687a99-f620-4315-8bfa-cc0966eb417a.png" alt="House Image" class="house-image">
+            <h1>New</h1>
+        </div> *@
+    </dl>
+</div>
+<div>
+    @* <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> | *@
+    <a asp-action="Index">Back to List</a>
+</div>

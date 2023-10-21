@@ -1,0 +1,81 @@
+@{
+    ViewData["Title"] = "Buyer Reviews";
+}
+
+<style>
+    /* Review container */
+    .review-container {
+        border: 1px solid #ddd;
+        padding: 20px;
+        margin: 10px 0;
+        border-radius: 5px;
+        background-color: #fff;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Reviewer's name */
+    .review-author {
+        font-weight: bold;
+        color: #333;
+        margin-top: 10px;
+    }
+
+    /* Review text */
+    .review-text {
+        color: #666;
+        font-size: 16px;
+        line-height: 1.4;
+        margin-top: 10px;
+    }
+
+    /* Reviewer's image (if applicable) */
+    .reviewer-image {
+        max-width: 100px;
+        border-radius: 50%;
+        margin-right: 10px;
+        float: left;
+    }
+
+    /* Star rating (if applicable) */
+    .star-rating {
+        color: #f39c12;
+    }
+
+    /* Add additional styles as needed */
+</style>
+
+<div class="container">
+    <h1>Buyer Reviews</h1>
+    <div class="row">
+        <div class="review-container">
+            <img class="reviewer-image" src="" alt="احمد محسن">
+            <div class="review-text">
+                <p class="star-rating">★★★★★</p>
+                <p class="review-author">احمد محسن</p>
+                <p style="direction: rtl;">
+                    "بالفعل انه تطبيق رائع , اشتريت منه منزلا كان منزلا رائعا ,شكرا  House Homework ."
+                </p>
+            </div>
+        </div>
+        <div class="review-container">
+            <img class="reviewer-image" src="" alt="عبدالغني">
+            <div class="review-text">
+                <p class="star-rating">★★★★</p>
+                <p class="review-author">عبدالغني</p>
+                <p style="direction: rtl;">
+                    " رايت منزلا رائعا متعدد الغرف وسعره رخيص جدا ,احببت التطبيق كثيرا."
+                </p>
+            </div>
+        </div>
+        <div class="review-container">
+            <img class="reviewer-image" src="face.jpg" alt="ام كلثوم" asp-append-version="true">
+            <div class="review-text">
+                <p class="star-rating">★★★</p>
+                <p class="review-author">ام كلثوم</p>
+                <p style="direction: rtl;">
+                    "انه منزلا رائعا احببت هواه , اود شراء منزل جديد ,تحفة حقيقية."
+                </p>
+            </div>
+        </div>
+    </div>
+</div>

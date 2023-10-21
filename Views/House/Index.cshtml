@@ -1,0 +1,129 @@
+@model MvcHouse.Models.HouseSearchCriteria
+
+@{
+    ViewData["Title"] = "Index";
+}
+<style>
+    .create-button {
+        background-color: #007bff;
+        /* Blue background color */
+        color: #fff;
+        /* White text color */
+        padding: 10px 20px;
+        /* Padding around the text */
+        border: none;
+        /* Remove the border */
+        text-decoration: none;
+        /* Remove underlines */
+        cursor: pointer;
+        /* Show pointer cursor on hover */
+        border-radius: 4px;
+        /* Add rounded corners */
+    }
+
+    .create-button:hover {
+        background-color: #2d0de0;
+        /* Darker blue on hover */
+        color: #fff;
+    }
+
+    tr:nth-child(odd) {
+        background-color: #f2f2f2;
+    }
+
+    .table-button {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        padding: 5px 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        text-decoration: none;
+    }
+</style>
+<h1>Houses</h1>
+<p>
+    <a asp-action="Create" class="create-button">Create New</a>
+</p>
+<form asp-controller="House" asp-action="Index" method="get">
+    <p>
+        @* <select asp-for="MovieGenre" asp-items="Model.Genres">
+        <option value="">All</option>
+        </select> *@
+
+        Address: <input type="text" name="SearchString" />
+        <input type="submit" value="Filter" />
+    </p>
+</form>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Houses![0].Address)
+            </th>
+
+            @* <th>
+            @Html.DisplayNameFor(model => model.Houses![0].Bedrooms)
+            </th>
+            <th>
+            @Html.DisplayNameFor(model => model.Houses![0].Bathrooms)
+            </th> *@
+            <th>
+                @Html.DisplayNameFor(model => model.Houses![0].Price)
+                ($)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Houses![0].Area)
+                (m^2)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Houses![0].NumberOfRooms)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Houses![0].Floor)
+            </th>
+            @* <th>
+            @Html.DisplayNameFor(model => model.Houses![0].IsSold)
+            </th> *@
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.Houses!)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Address)
+                </td>
+
+                @* <td>
+            @Html.DisplayFor(modelItem => item.Bedrooms)
+            </td>
+            <td>
+            @Html.DisplayFor(modelItem => item.Bathrooms)
+            </td> *@
+                <td>
+                    @Html.DisplayFor(modelItem => item.Price)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Area)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.NumberOfRooms)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Floor)
+                </td>
+                @* <td>
+            @Html.DisplayFor(modelItem => item.IsSold)
+            </td> *@
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.Id" class="table-button">Edit</a> |
+                    <a asp-action="Details" asp-route-id="@item.Id" class="table-button">Details</a> |
+                    <a asp-action="Delete" asp-route-id="@item.Id" class="table-button">Delete</a> |
+                    <a asp-action="ConfirmHouse" asp-route-id="@item.Id" class="table-button" style="background-color: green;">Buy</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
