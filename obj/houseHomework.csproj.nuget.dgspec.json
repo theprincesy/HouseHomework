@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\abood_ssd\\VScodeProjects\\houseHomework\\houseHomework.csproj": {}
+    "c:\\Users\\abood_ssd\\VScodeProjects\\houseHomework\\houseHomework.csproj": {}
   },
   "projects": {
-    "C:\\Users\\abood_ssd\\VScodeProjects\\houseHomework\\houseHomework.csproj": {
+    "c:\\Users\\abood_ssd\\VScodeProjects\\houseHomework\\houseHomework.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\abood_ssd\\VScodeProjects\\houseHomework\\houseHomework.csproj",
+        "projectUniqueName": "c:\\Users\\abood_ssd\\VScodeProjects\\houseHomework\\houseHomework.csproj",
         "projectName": "houseHomework",
-        "projectPath": "C:\\Users\\abood_ssd\\VScodeProjects\\houseHomework\\houseHomework.csproj",
+        "projectPath": "c:\\Users\\abood_ssd\\VScodeProjects\\houseHomework\\houseHomework.csproj",
         "packagesPath": "C:\\Users\\abood_ssd\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\abood_ssd\\VScodeProjects\\houseHomework\\obj\\",
+        "outputPath": "c:\\Users\\abood_ssd\\VScodeProjects\\houseHomework\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\abood_ssd\\AppData\\Roaming\\NuGet\\NuGet.Config"

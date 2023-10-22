@@ -288,8 +288,3 @@ C:\Users\abood_ssd\VScodeProjects\houseHomework\obj\Debug\net7.0\refint\houseHom
 C:\Users\abood_ssd\VScodeProjects\houseHomework\obj\Debug\net7.0\houseHomework.pdb
 C:\Users\abood_ssd\VScodeProjects\houseHomework\obj\Debug\net7.0\houseHomework.genruntimeconfig.cache
 C:\Users\abood_ssd\VScodeProjects\houseHomework\obj\Debug\net7.0\ref\houseHomework.dll
-C:\Users\abood_ssd\VScodeProjects\houseHomework\bin\Debug\net7.0\PublishOutput\web.config
-C:\Users\abood_ssd\VScodeProjects\houseHomework\bin\Debug\net7.0\PublishOutput\appsettings.Development.json
-C:\Users\abood_ssd\VScodeProjects\houseHomework\bin\Debug\net7.0\PublishOutput\appsettings.json
-C:\Users\abood_ssd\VScodeProjects\houseHomework\bin\Debug\net7.0\PublishOutput\houseHomework.deps.json
-C:\Users\abood_ssd\VScodeProjects\houseHomework\bin\Debug\net7.0\PublishOutput\houseHomework.runtimeconfig.json

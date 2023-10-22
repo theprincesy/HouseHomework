@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "s6eAZDIfRuC4nAcS/F1rdW8PxF+UEYGTUu1hdsonIRsPlSDdzrRZGtsu8yTyToS8smSXVJ8mCHXeT4ZujeV6LQ==",
+  "dgSpecHash": "7MF/TqhT6wDUfy4Jz2EgH3evka3nezGse8bS/KX17pm0QKR7CgZG3pXDOuzff/G38QM7LQWJ6/dYAyXWRsqelw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\abood_ssd\\VScodeProjects\\houseHomework\\houseHomework.csproj",
+  "projectFilePath": "c:\\Users\\abood_ssd\\VScodeProjects\\houseHomework\\houseHomework.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\abood_ssd\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\abood_ssd\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",
