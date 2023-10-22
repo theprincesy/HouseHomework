@@ -232,6 +232,7 @@ namespace houseHomework.Controllers
           return (_context.House?.Any(e => e.Id == id)).GetValueOrDefault();
         }
 
+        [Authorize]
         public async Task<IActionResult> ConfirmHouse(int? id)
         {
             if (id == null || _context.House == null)

@@ -4,6 +4,7 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,38 +13,100 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
         body {
-            background-image: url('bg-new.jpg'); /* Set the path to your background image */
-            background-size: cover; /* Scale the image to cover the entire background */
-            background-repeat: no-repeat; /* Prevent image repetition */
+            background-image: url('bg-new.jpg');
+            /* Set the path to your background image */
+            background-size: cover;
+            /* Scale the image to cover the entire background */
+            background-repeat: no-repeat;
+            /* Prevent image repetition */
+        }
+
+        /* CSS to style the glassmorphism button */
+        .custom-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background: linear-gradient(to bottom, #ff6b6b, #ff0000);
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .custom-button:hover {
+            background: linear-gradient(to bottom, #ff0000, #ff6b6b);
+        }
+
+        /* CSS for common button style */
+        .common-button {
+            display: inline-block;
+            padding: 30px 60px;
+            /* Adjust the padding for a larger size */
+            background-color: #92c5f5;
+            /* Initial background color */
+            color: #fff;
+            border: none;
+            border-radius: 15px;
+            /* Increase the border radius for a more rounded look */
+            text-align: center;
+            text-decoration: none;
+            font-size: 28px;
+            /* Adjust the font size */
+            cursor: pointer;
+            margin: 10px;
+            /* Adjust the margin to separate buttons */
+            transition: background-color 0.3s ease;
+        }
+
+        .common-button:hover {
+            background-color: #53014f;
+            /* Change the background color on hover */
+            color: white;
+            
         }
     </style>
 </head>
+
 <body>
     @* <!-- الشريط العلوي (Navbar) -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">شركة لبيع المنازل</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">الرئيسية</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">العقارات</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">اتصل بنا</a>
-                </li>
-            </ul>
-        </div>
+    <a class="navbar-brand" href="#">شركة لبيع المنازل</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+    <li class="nav-item active">
+    <a class="nav-link" href="#">الرئيسية</a>
+    </li>
+    <li class="nav-item">
+    <a class="nav-link" href="#">العقارات</a>
+    </li>
+    <li class="nav-item">
+    <a class="nav-link" href="#">اتصل بنا</a>
+    </li>
+    </ul>
+    </div>
     </nav> *@
 
     <!-- الصفحة الرئيسية -->
     <div class="container mt-5">
         <h1>مرحبًا بك في شركة لبيع المنازل في دمشق</h1>
         <p>نحن نقدم أفضل العروض في سوق العقارات في دمشق. ابحث عن منزلك الجديد اليوم!</p>
+
+    </div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div>
+        @* <a href="#" class="custom-button gradient-button">Button 1</a>
+        <a href="#" class="custom-button gradient-button">Button 2</a> *@
+        <a asp-action="Create" asp-controller="House" class="common-button">Create House</a>
+        <a asp-action="Index" asp-controller="House" class="common-button";>Buy House</a>
+
     </div>
 
     <!-- تضمين ملفات JavaScript لـ Bootstrap -->
@@ -51,4 +114,5 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
+
 </html>

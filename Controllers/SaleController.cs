@@ -191,6 +191,7 @@ namespace houseHomework.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize]
         public async Task<IActionResult> CreateSale(int? id)
         {
             try{
